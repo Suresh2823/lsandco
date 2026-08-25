@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="LSCO Group - Lakshan Sam & Co, LS Digital and LS & Co. Professional tax consultancy, computer sales and service, and corporate gifting solutions.">
+
+<meta name="keywords" content="LSCO Group, Lakshan Sam & Co, Tax Consultant Chennai, GST Consultant, Income Tax, LS Digital, Computer Sales, Computer Service, Corporate Gifts, LS & Co">
+
+<meta name="author" content="LSCO Group">
+
+<title>LSCO Group | Integrated Business Solutions</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* ==============================
+   GLOBAL
+================================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f8fb;
+    color:#333;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* ==============================
+   HEADER
+================================ */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:linear-gradient(
+        100deg,
+        #084f8c,
+        #0b67a8,
+        #4caf50
+    );
+
+    color:white;
+
+    box-shadow:0 3px 15px rgba(0,0,0,0.12);
+}
+
+.header-inner{
+    min-height:85px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:30px;
+}
+
+
+/* LOGO */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.logo img{
+    width:62px;
+    height:62px;
+
+    object-fit:contain;
+
+    background:#fff;
+
+    padding:4px;
+
+    border-radius:10px;
+}
+
+.logo-text h1{
+    font-size:27px;
+    font-weight:800;
+    letter-spacing:0.5px;
+}
+
+.logo-text p{
+    font-size:11px;
+    opacity:.9;
+}
+
+
+/* NAVIGATION */
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    font-size:14px;
+    font-weight:500;
+
+    transition:.3s;
+
+    position:relative;
+}
+
+nav a::after{
+    content:"";
+
+    position:absolute;
+
+    width:0;
+    height:2px;
+
+    background:#fff;
+
+    left:0;
+    bottom:-6px;
+
+    transition:.3s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+
+/* ==============================
+   HERO
+================================ */
+
+.hero{
+    position:relative;
+
+    overflow:hidden;
+
+    padding:100px 0 90px;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(76,175,80,.15),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #eef6fb
+        );
+}
+
+.hero::before{
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    border-radius:50%;
+
+    background:rgba(11,95,165,.05);
+
+    top:-150px;
+    right:-100px;
+}
+
+.hero-content{
+    max-width:850px;
+
+    position:relative;
+    z-index:2;
+}
+
+.hero-tag{
+    display:inline-block;
+
+    padding:7px 17px;
+
+    border-radius:30px;
+
+    background:#e4f4e8;
+
+    color:#318d45;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+}
+
+.hero h2{
+    font-size:52px;
+
+    line-height:1.15;
+
+    color:#084f8c;
+
+    margin-bottom:20px;
+
+    font-weight:800;
+}
+
+.hero h2 span{
+    color:#4caf50;
+}
+
+.hero p{
+    max-width:780px;
+
+    font-size:18px;
+
+    color:#555;
+
+    margin-bottom:32px;
+}
+
+.hero-buttons{
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+
+    padding:13px 26px;
+
+    border-radius:30px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#0b5fa5;
+    color:white;
+
+    box-shadow:0 7px 18px rgba(11,95,165,.2);
+}
+
+.btn-primary:hover{
+    background:#084f8c;
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    background:white;
+
+    color:#0b5fa5;
+
+    border:2px solid #0b5fa5;
+}
+
+.btn-secondary:hover{
+    background:#0b5fa5;
+    color:white;
+}
+
+
+/* ==============================
+   SECTION
+================================ */
+
+.section{
+    padding:80px 0;
+}
+
+.section-heading{
+    text-align:center;
+
+    max-width:700px;
+
+    margin:0 auto 45px;
+}
+
+.section-heading h2{
+    font-size:35px;
+
+    color:#084f8c;
+
+    margin-bottom:10px;
+}
+
+.section-heading h2 span{
+    color:#4caf50;
+}
+
+.section-heading p{
+    color:#666;
+
+    font-size:15px;
+}
+
+
+/* ==============================
+   COMPANY CARDS
+================================ */
+
+.cards{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:28px;
+}
+
+.card{
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,.07);
+
+    transition:.35s;
+
+    border:1px solid #edf1f4;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 18px 40px
+        rgba(0,0,0,.12);
+}
+
+.card-image{
+    height:190px;
+
+    overflow:hidden;
+}
+
+.card-image img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+}
+
+.card:hover .card-image img{
+    transform:scale(1.06);
+}
+
+.card-content{
+    padding:25px;
+}
+
+.card-content h3{
+    color:#084f8c;
+
+    font-size:22px;
+
+    margin-bottom:5px;
+}
+
+.card-content h4{
+    color:#4caf50;
+
+    font-size:14px;
+
+    margin-bottom:13px;
+}
+
+.card-content p{
+    font-size:14px;
+
+    color:#666;
+
+    margin-bottom:20px;
+}
+
+.card-btn{
+    display:inline-block;
+
+    color:#0b5fa5;
+
+    font-size:14px;
+
+    font-weight:600;
+}
+
+.card-btn:hover{
+    color:#4caf50;
+}
+
+
+/* ==============================
+   WHY CHOOSE US
+================================ */
+
+.why-section{
+    background:white;
+}
+
+.features{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:25px;
+}
+
+.feature{
+    text-align:center;
+
+    padding:30px 20px;
+
+    border-radius:16px;
+
+    background:#f7fafc;
+
+    transition:.3s;
+}
+
+.feature:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(0,0,0,.07);
+}
+
+.feature-icon{
+    width:65px;
+    height:65px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    margin:0 auto 18px;
+
+    border-radius:50%;
+
+    background:#e8f4fb;
+
+    color:#0b5fa5;
+
+    font-size:27px;
+}
+
+.feature h3{
+    font-size:17px;
+
+    color:#084f8c;
+
+    margin-bottom:8px;
+}
+
+.feature p{
+    font-size:13px;
+
+    color:#666;
+}
+
+
+/* ==============================
+   ABOUT
+================================ */
+
+.about-box{
+    background:white;
+
+    border-radius:20px;
+
+    padding:50px;
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 2fr;
+
+    gap:50px;
+
+    align-items:center;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,.05);
+}
+
+.about-logo{
+    text-align:center;
+}
+
+.about-logo img{
+    width:190px;
+
+    margin:auto;
+}
+
+.about-content h2{
+    color:#084f8c;
+
+    font-size:32px;
+
+    margin-bottom:18px;
+}
+
+.about-content h2 span{
+    color:#4caf50;
+}
+
+.about-content p{
+    color:#666;
+
+    font-size:15px;
+
+    margin-bottom:15px;
+}
+
+
+/* ==============================
+   CONTACT
+================================ */
+
+.contact-section{
+    padding-bottom:80px;
+}
+
+.contact-box{
+    background:
+        linear-gradient(
+            110deg,
+            #084f8c,
+            #0b67a8,
+            #4caf50
+        );
+
+    color:white;
+
+    border-radius:22px;
+
+    padding:50px;
+
+    text-align:center;
+
+    box-shadow:
+        0 15px 35px
+        rgba(11,95,165,.2);
+}
+
+.contact-box h2{
+    font-size:32px;
+
+    margin-bottom:10px;
+}
+
+.contact-box > p{
+    opacity:.9;
+
+    margin-bottom:30px;
+}
+
+.contact-details{
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:30px;
+}
+
+.contact-item{
+    font-size:15px;
+}
+
+.contact-item strong{
+    display:block;
+
+    margin-bottom:4px;
+}
+
+.contact-item a{
+    color:white;
+}
+
+.contact-buttons{
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+}
+
+.whatsapp{
+    background:#25D366;
+
+    color:white;
+}
+
+.whatsapp:hover{
+    background:#1da851;
+
+    transform:translateY(-3px);
+}
+
+.email-btn{
+    background:white;
+
+    color:#0b5fa5;
+}
+
+.email-btn:hover{
+    background:#f1f1f1;
+
+    transform:translateY(-3px);
+}
+
+
+/* ==============================
+   FOOTER
+================================ */
+
+footer{
+    background:#063d6d;
+
+    color:white;
+
+    padding:35px 0 20px;
+
+    text-align:center;
+}
+
+.footer-logo{
+    font-size:23px;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+}
+
+.footer-logo span{
+    color:#4caf50;
+}
+
+footer p{
+    font-size:13px;
+
+    opacity:.85;
+
+    margin:5px;
+}
+
+.footer-links{
+    margin:18px 0;
+}
+
+.footer-links a{
+    color:white;
+
+    margin:0 10px;
+
+    font-size:13px;
+}
+
+.footer-links a:hover{
+    color:#4caf50;
+}
+
+.copyright{
+    border-top:1px solid rgba(255,255,255,.15);
+
+    margin-top:20px;
+
+    padding-top:18px;
+}
+
+
+/* ==============================
+   MOBILE
+================================ */
+
+@media(max-width:950px){
+
+    .cards{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .features{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .hero h2{
+        font-size:44px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .header-inner{
+        flex-direction:column;
+
+        padding:15px 0;
+    }
+
+    nav{
+        gap:15px;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+    }
+
+    nav a{
+        font-size:13px;
+    }
+
+    .hero{
+        padding:70px 0;
+        text-align:center;
+    }
+
+    .hero-content{
+        margin:auto;
+    }
+
+    .hero h2{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    .about-box{
+        grid-template-columns:1fr;
+
+        padding:35px 25px;
+
+        text-align:center;
+    }
+
+    .contact-box{
+        padding:35px 20px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .logo-text h1{
+        font-size:23px;
+    }
+
+    .logo img{
+        width:55px;
+        height:55px;
+    }
+
+    .hero h2{
+        font-size:31px;
+    }
+
+    .section{
+        padding:60px 0;
+    }
+
+    .section-heading h2{
+        font-size:29px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ==============================
+     HEADER
+================================ -->
+
+<header>
+
+<div class="container header-inner">
+
+    <div class="logo">
+
+        <!-- Keep logo.png in the same folder as index.html -->
+        <img src="logo.png" alt="LSCO Group Logo">
+
+        <div class="logo-text">
+            <h1>LSCO Group</h1>
+            <p>Integrated Business Solutions</p>
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#companies">Companies</a>
+
+        <a href="#why-us">Why Us</a>
+
+        <a href="#about">About</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+</div>
+
+</header>
+
+
+
+<!-- ==============================
+     HERO
+================================ -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+    <div class="hero-content">
+
+        <div class="hero-tag">
+            ONE GROUP • MULTIPLE SOLUTIONS
+        </div>
+
+        <h2>
+            Welcome to
+            <span>LSCO Group</span>
+        </h2>
+
+        <p>
+            A trusted group of specialized businesses delivering
+            professional tax consultancy, technology solutions,
+            computer sales & service, and corporate gifting solutions
+            for individuals, businesses and organizations across India.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#companies"
+               class="btn btn-primary">
+                Explore Our Companies
+            </a>
+
+            <a href="#contact"
+               class="btn btn-secondary">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ==============================
+     COMPANIES
+================================ -->
+
+<section class="section" id="companies">
+
+<div class="container">
+
+    <div class="section-heading">
+
+        <h2>
+            Our <span>Group Companies</span>
+        </h2>
+
+        <p>
+            Specialized businesses working together to provide
+            reliable and professional solutions.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <!-- LAKSHAN SAM & CO -->
+
+        <div class="card">
+
+            <div class="card-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80"
+                alt="Tax Consultancy">
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>
+                    Lakshan Sam & Co
+                </h3>
+
+                <h4>
+                    TAX CONSULTANTS
+                </h4>
+
+                <p>
+                    Professional GST registration, GST return filing,
+                    Income Tax returns, accounting, bookkeeping,
+                    audit assistance and business compliance services.
+                </p>
+
+                <a href="#contact"
+                   class="card-btn">
+                    Consult Now →
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- LS DIGITAL -->
+
+        <div class="card">
+
+            <div class="card-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=80"
+                alt="Computer Sales and Service">
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>
+                    LS Digital
+                </h3>
+
+                <h4>
+                    COMPUTER SALES & SERVICE
+                </h4>
+
+                <p>
+                    Custom PC builds, desktops, laptops,
+                    computer accessories, networking, repairs,
+                    upgrades, AMC support and IT solutions.
+                </p>
+
+                <a href="#contact"
+                   class="card-btn">
+                    Get IT Support →
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- LS & CO -->
+
+        <div class="card">
+
+            <div class="card-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?auto=format&fit=crop&w=900&q=80"
+                alt="Corporate Gifts">
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>
+                    LS & Co
+                </h3>
+
+                <h4>
+                    CORPORATE GIFTING
+                </h4>
+
+                <p>
+                    Premium corporate gifts, customized gift hampers,
+                    promotional products, festive gifts, employee
+                    appreciation gifts and branded merchandise.
+                </p>
+
+                <a href="#contact"
+                   class="card-btn">
+                    View Collection →
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ==============================
+     WHY CHOOSE US
+================================ -->
+
+<section class="section why-section"
+         id="why-us">
+
+<div class="container">
+
+    <div class="section-heading">
+
+        <h2>
+            Why Choose <span>LSCO Group?</span>
+        </h2>
+
+        <p>
+            Our businesses are built around trust,
+            professional service and customer satisfaction.
+        </p>
+
+    </div>
+
+
+    <div class="features">
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                ✓
+            </div>
+
+            <h3>
+                Professional Service
+            </h3>
+
+            <p>
+                Reliable and professional solutions
+                delivered with attention to detail.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                ★
+            </div>
+
+            <h3>
+                Trusted Solutions
+            </h3>
+
+            <p>
+                Practical solutions designed to meet
+                your individual and business requirements.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                ⚙
+            </div>
+
+            <h3>
+                Complete Support
+            </h3>
+
+            <p>
+                End-to-end support across tax,
+                technology and corporate gifting.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">
+                ♡
+            </div>
+
+            <h3>
+                Customer Focus
+            </h3>
+
+            <p>
+                We value long-term relationships
+                and customer satisfaction.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ==============================
+     ABOUT
+================================ -->
+
+<section class="section" id="about">
+
+<div class="container">
+
+    <div class="about-box">
+
+
+        <div class="about-logo">
+
+            <img
+            src="logo.png"
+            alt="LSCO Group Logo">
+
+        </div>
+
+
+        <div class="about-content">
+
+            <h2>
+                About <span>LSCO Group</span>
+            </h2>
+
+            <p>
+                LSCO Group brings together three specialized
+                businesses under one trusted group:
+                <strong>Lakshan Sam & Co</strong>,
+                <strong>LS Digital</strong>, and
+                <strong>LS & Co</strong>.
+            </p>
+
+            <p>
+                Our objective is to provide reliable,
+                professional and customer-focused services
+                across multiple business sectors.
+            </p>
+
+            <p>
+                From tax compliance and accounting to computer
+                technology and corporate gifting, LSCO Group
+                provides practical solutions backed by
+                professional service and commitment.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ==============================
+     CONTACT
+================================ -->
+
+<section class="contact-section"
+         id="contact">
+
+<div class="container">
+
+    <div class="contact-box">
+
+        <h2>
+            Let's Work Together
+        </h2>
+
+        <p>
+            Contact LSCO Group for professional business
+            and technology solutions.
+        </p>
+
+
+        <div class="contact-details">
+
+
+            <div class="contact-item">
+
+                <strong>📞 Phone</strong>
+
+                <a href="tel:+918489240124">
+                    +91 84 89 24 01 24
+                </a>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <strong>✉ Email</strong>
+
+                <a href="mailto:info@lscogroup.com">
+                    info@lscogroup.com
+                </a>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <strong>🌐 Website</strong>
+
+                <span>
+                    www.lscogroup.com
+                </span>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <strong>📍 Location</strong>
+
+                <span>
+                    Chennai, Tamil Nadu, India
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="contact-buttons">
+
+            <a
+            href="https://wa.me/918489240124"
+            target="_blank"
+            class="btn whatsapp">
+
+                WhatsApp Us
+
+            </a>
+
+
+            <a
+            href="mailto:info@lscogroup.com"
+            class="btn email-btn">
+
+                Send Email
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ==============================
+     FOOTER
+================================ -->
+
+<footer>
+
+<div class="container">
+
+    <div class="footer-logo">
+        LSCO <span>Group</span>
+    </div>
+
+    <p>
+        Lakshan Sam & Co • LS Digital • LS & Co
+    </p>
+
+
+    <div class="footer-links">
+
+        <a href="#home">
+            Home
+        </a>
+
+        <a href="#companies">
+            Companies
+        </a>
+
+        <a href="#about">
+            About
+        </a>
+
+        <a href="#contact">
+            Contact
+        </a>
+
+    </div>
+
+
+    <div class="copyright">
+
+        <p>
+            © 2026 LSCO Group.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
